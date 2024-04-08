@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./LoginPage.css";
 import EyeIcon from "./EyeIcon";
 import scribble from  '../../assets/image.png';
+import Typewriter from '../common/TypeWriter'
 
 
 export default function LoginPage() {
@@ -126,7 +127,7 @@ export default function LoginPage() {
         </div>
       </div>
       <div className="display-banner">
-        <h1>"A poem begins in delight and ends in wisdom."</h1>
+      <Typewriter text='"A poem begins in delight and ends in wisdom."' speed={40} />
         <img src={scribble} alt="" />
       </div>
      
