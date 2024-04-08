@@ -14,9 +14,6 @@ export default function LoginPage() {
     setPasswordVisible(!passwordVisible);
   };
 
-
-
-
   return (
     <div className="login-page-container">
       <div className="input-details-page">

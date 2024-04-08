@@ -1,0 +1,266 @@
+.home-page-container {
+    display: flex;
+    /* Establishes flex container */
+    flex-direction: row;
+    /* Arranges flex items in a row */
+    flex-wrap: wrap;
+    /* Allows items to wrap onto multiple lines if needed */
+    justify-content: space-around;
+    /* Distributes items evenly with space between them */
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.home-page-content-sections {
+    display: flex;
+    /* Establishes flex container */
+    flex-direction: column;
+    /* Arranges flex items in a column */
+    width: 100px;
+    height: 100%;
+    /* Sets width of each content section */
+}
+
+.home-page-content-sections:nth-child(1) {
+    width: 15%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 3%;
+    justify-content: flex-start;
+    padding-top: 3%;
+}
+
+@media screen and (min-width: 1900px) {
+    .home-page-content-sections:nth-child(1) {
+        padding-left: 8%;
+    }
+}
+
+.home-page-content-sections:nth-child(3) {
+    width: 25%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 3%;
+    justify-content: flex-start;
+    padding-top: 3%;
+}
+
+.home-page-content-sections:nth-child(even) {
+    width: 50%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    overflow-y: scroll;
+    display: flex;
+    direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.home-page-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #DEB6AB;
+    cursor: pointer;
+    margin-bottom: 5%;
+
+}
+
+.home-page-icons>svg {
+    width: 20px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+}
+
+.recommended {
+    font-family: Rethink Sans;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 42.5px;
+    text-align: left;
+
+}
+
+.tagline {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22.1px;
+    text-align: left;
+
+}
+
+
+.write-post {
+    width: min(95%, 800px); /* Use min-width instead of width */
+    min-height: 60px;
+    border-radius: 10px;
+    border: 0.5px solid #DEB6AB;
+    opacity: 0px;
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+    color: #944E63;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.write-post>svg {
+    position: absolute;
+    right: 16px;
+    bottom: 25%;
+    width: 24px;
+}
+
+.post-thumbnail-card {
+    width: min(92%, 780px);
+    border: 0.5px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    padding: 20px;
+    position: relative;
+}
+
+
+.post-thumbnail-profile {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.post-thumbnail-profile-name {
+    margin-left: 18px;
+    font-family: Rethink Sans;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.post-thumbnail-profile-genres{
+    font-family: Rethink Sans;
+font-size: 11px;
+font-weight: 500;
+line-height: 14.32px;
+text-align: left;
+color: #888282;
+margin-left: 18px;
+}
+
+.post-thumbnail-profile-genres > span {
+    margin: 0;
+}
+
+.post-thumbnail-title {
+    font-family: Rethink Sans;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28.64px;
+    text-align: left;
+    color: #944E63;
+    margin-bottom: 2%;
+}
+
+.post-thumbnail-profile>img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 25px;
+}
+
+.go-to-read-thumbnail {
+    color: #F9F8EB;
+    background-color: #277457;
+    width: 68px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none !important;
+    border: none;
+}
+
+.read-button {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    align-content: center;
+    margin-top: 1%;
+}
+.post-thumbnail-content {
+    font-family: Rethink Sans;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20.4px;
+    text-align: left;
+
+}
+
+.recommended-reads{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-right: 10%;
+    
+}
+
+.recommended-reads > button {
+    margin-left: 10px;
+    justify-self: end;
+    cursor: pointer;
+}
+.recommended-reads-info {
+    margin-top: 20px;
+}
+
+.recommended-reads:nth-child(odd) > .recommended-reads-info > .recommended-reads-info-title {
+    color: #F29727;
+    font-family: Rethink Sans;
+font-size: 16px;
+font-weight: 500;
+line-height: 27.2px;
+text-align: left;
+cursor: pointer;
+}
+
+.recommended-reads:nth-child(even) > .recommended-reads-info > .recommended-reads-info-title {
+    color: #944E63;
+    font-family: Rethink Sans;
+font-size: 16px;
+font-weight: 500;
+line-height: 27.2px;
+text-align: left;
+cursor: pointer;
+}
+
+
+.recommended-reads-info-author {
+    font-family: Rethink Sans;
+font-size: 11px;
+font-weight: 500;
+line-height: 18.7px;
+text-align: left;
+color:  #989898;
+}
