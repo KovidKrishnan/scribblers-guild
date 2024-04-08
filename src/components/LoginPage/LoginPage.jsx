@@ -127,7 +127,7 @@ export default function LoginPage() {
         </div>
       </div>
       <div className="display-banner">
-      <Typewriter text='"A poem begins in delight and ends in wisdom."' speed={50} />
+      <Typewriter text='"A poem begins in delight and ends in wisdom."' speed={80} />
         <img src={scribble} alt="" />
       </div>
      
