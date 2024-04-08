@@ -15,7 +15,12 @@ const Typewriter = ({ text, speed }) => {
     return () => clearTimeout(timer);
   }, [index, text, speed]);
 
-  return <h1>{displayText}</h1>;
+  return (
+    <h1>
+      {displayText}
+      <span className="cursor" style={{ color: '#85586F', opacity: index === text.length ? 0 : 1,  fontWeight: 400 }}>|</span>
+    </h1>
+  );
 };
 
 export default Typewriter;

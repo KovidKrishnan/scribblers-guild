@@ -191,7 +191,7 @@ form>button {
 }
 
 
-.display-banner > h1 {
+.display-banner > h1, .display-banner > span {
     width: 500px;
     justify-content: center;
     align-self: center;
