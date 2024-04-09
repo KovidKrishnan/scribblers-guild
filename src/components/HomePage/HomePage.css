@@ -24,7 +24,7 @@
 }
 
 .home-page-content-sections:nth-child(1) {
-    width: 15%;
+    width: 10%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -263,3 +263,87 @@
     text-align: left;
     color: #989898;
 }
+
+@media screen and (max-width: 760px) {
+    .home-page-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-page-content-sections:nth-child(2) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+        margin-top: 80px;
+
+        align-items: center;
+    }
+    .home-page-content-sections:nth-child(1){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 3;
+        width: 100%;
+        height: 40px;
+    }
+    .home-page-icons{
+        margin: 0;
+        padding: 0;
+    }
+    .home-page-content-sections:nth-child(1) > .home-page-icons > span{
+        margin: 0px 20px;
+    }
+    .post-thumbnail-card {
+        margin: 20px 0px;
+    }
+    .home-page-icons>svg {
+        margin-right: 0;
+    }
+
+    .home-page-content-sections:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 90%;
+        padding: 0;
+    }
+    .recommended-reads{
+        margin: 0;
+        height: auto;
+        position: relative;
+    }
+    .post-thumbnail-card {
+        width: 90%;
+    }
+    .post-thumbnail-profile {
+        position: relative;
+    }
+    .read-button {
+        position: absolute;
+        right: 0;
+        bottom: 12px;
+    }
+    .go-to-read-thumbnail{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+    }
+    .post-thumbnail-profile-genres {
+        width: 75%;
+    }
+}
+

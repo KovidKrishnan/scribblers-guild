@@ -41,7 +41,7 @@ export default function HomePage() {
           <HomeIcon
             color={selectedPage === "home" ? "#944E63" : "#DEB6AB"}
           ></HomeIcon>{" "}
-          home
+          <span style={{ color: selectedPage === "home" ? "#944E63" : "#DEB6AB" }}>home</span>
         </div>
         <div
           className="home-page-icons"
@@ -51,7 +51,7 @@ export default function HomePage() {
           <SearchIcon
             color={selectedPage === "search" ? "#944E63" : "#DEB6AB"}
           ></SearchIcon>{" "}
-          search
+          <span style={{ color: selectedPage === "search" ? "#944E63" : "#DEB6AB" }}>search</span>
         </div>
         <div
           className="home-page-icons"
@@ -61,7 +61,7 @@ export default function HomePage() {
           <ProfileIcon
             color={selectedPage === "profile" ? "#944E63" : "#DEB6AB"}
           ></ProfileIcon>{" "}
-          profile
+          <span style={{ color: selectedPage === "profile" ? "#944E63" : "#DEB6AB" }}>profile</span>
         </div>
       </div>
       {selectedPage === "home" && (
@@ -70,7 +70,6 @@ export default function HomePage() {
             start writing...
             <WriteIcon></WriteIcon>
           </div>
-          <div>
             <PostThumbNail postData={postData}></PostThumbNail>
             <PostThumbNail postData={postData}></PostThumbNail>
             <PostThumbNail postData={postData}></PostThumbNail>
@@ -78,7 +77,6 @@ export default function HomePage() {
             <PostThumbNail postData={postData}></PostThumbNail>
             <PostThumbNail postData={postData}></PostThumbNail>
             <PostThumbNail postData={postData}></PostThumbNail>
-          </div>
         </div>
       )}
       <div className="home-page-content-sections">

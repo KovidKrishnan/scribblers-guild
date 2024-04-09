@@ -207,8 +207,10 @@ form>button {
     line-height: 96px;
     width: 525px;
     text-align: left;
+}
 
-
+.display-banner > h1 {
+  margin-top: 3%;
 }
 
 
