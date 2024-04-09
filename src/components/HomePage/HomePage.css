@@ -264,14 +264,16 @@
     color: #989898;
 }
 
-@media screen and (max-width: 760px) {
-    .home-page-container{
+@media screen and (max-width: 767px) {
+    .home-page-container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row; /* Reverses the order of the flex items */
+        justify-content: center; /* Centers the flex items horizontally */
+        align-items: center; /* Centers the flex items vertically */
     }
+    
+    /* Add more styles for child elements if needed */
+    
 
     .home-page-content-sections:nth-child(2) {
         width: 100%;
@@ -312,14 +314,18 @@
     .home-page-icons>svg {
         margin-right: 0;
     }
-
+    .write-post {
+        width: 86%;
+    }
     .home-page-content-sections:nth-child(3){
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 90%;
+        width: 95%;
         padding: 0;
+        padding-bottom: 40px;
+        height: auto;
     }
     .recommended-reads{
         margin: 0;
@@ -327,7 +333,7 @@
         position: relative;
     }
     .post-thumbnail-card {
-        width: 90%;
+        width: 80%;
     }
     .post-thumbnail-profile {
         position: relative;
@@ -335,11 +341,11 @@
     .read-button {
         position: absolute;
         right: 0;
-        bottom: 12px;
+        bottom: 0;
     }
     .go-to-read-thumbnail{
         position: absolute;
-        bottom: 0px;
+        bottom: 12px;
         right: 0;
     }
     .post-thumbnail-profile-genres {
