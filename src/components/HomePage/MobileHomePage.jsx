@@ -5,6 +5,7 @@ import quoteAuthor2 from './assets/quote-author-2.png'
 import quoteAuthor3 from './assets/quote-author-3.png'
 import wellReceivedAuthor from './assets/well-received-author.png'
 import WellReceived from './WellReceived.jsx'
+import ScrollToTopButton from "../common/ScrollToTopButton.jsx";
 
 const MobileHomePage = () => {
     const cssClass = {
@@ -40,7 +41,8 @@ const MobileHomePage = () => {
 
 
   return (
-    <div className="mobile-home-page-container">
+    <>
+        <div className="mobile-home-page-container">
         <div className="mobile-profile-icon">
             <MobileProfileIcon></MobileProfileIcon>
         </div>
@@ -72,6 +74,8 @@ const MobileHomePage = () => {
 
         </div>
     </div>
+    <ScrollToTopButton></ScrollToTopButton>
+    </>
   );
 };
 

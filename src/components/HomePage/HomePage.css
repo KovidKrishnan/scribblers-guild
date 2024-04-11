@@ -9,7 +9,7 @@
     /* Distributes items evenly with space between them */
     align-items: flex-start;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0;
 }
 
@@ -54,11 +54,14 @@
     width: 50%;
     padding-top: 4%;
     padding-bottom: 4%;
+    height: 100%;
     overflow-y: scroll;
     display: flex;
     direction: column;
     justify-content: start;
     align-items: start;
+    scroll-behavior: auto;
+
 }
 
 .home-page-icons {

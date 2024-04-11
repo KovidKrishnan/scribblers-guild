@@ -55,7 +55,7 @@
 
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 2px; /* Change the width of the scrollbar */
+    width: 6px; /* Change the width of the scrollbar */
   }
  
   ::-webkit-scrollbar-track {
