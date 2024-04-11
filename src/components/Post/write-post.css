@@ -1,0 +1,99 @@
+.write-post-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Rethink Sans";
+}
+
+.write-post-title {
+    width: min(50%, 700px);
+    background-color: #FEFBF4;
+    color: #AC7D88;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #944E63;
+    padding: 25px 20px;
+    font-family: "Rethink Sans";
+
+}
+
+.post-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+}
+
+.post-content > textarea {
+    width: min(50%, 700px);
+    background-color: #FEFBF4;
+    color: #AC7D88;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    margin: 0;
+    height: 280px;
+    border-radius: 10px;
+    border: 1px solid #944E63;
+    padding: 25px 20px;
+    font-family: "Rethink Sans";
+    resize: none;
+    overflow-y: scroll;
+    margin-top: 30px;
+    position: relative;
+}
+
+.bold-button {
+    position: absolute;
+    left: calc(calc(calc(100% - min(50%, 700px))/2) + 10px);
+    bottom: 30px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rethink Sans";
+    color: #DEB6AB;
+    border-radius: 5px;
+}
+
+
+.italic-button {
+    position: absolute;
+    left: calc(calc(calc(100% - min(50%, 700px))/2) + 50px);
+    bottom: 30px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: "Rethink Sans";
+    border-radius: 5px;
+    color: #DEB6AB;
+    align-items: center;
+}
+
+
+.post-the-article {
+    width: 100px;
+height: 40px;
+border-radius: 10px;
+opacity: 0px;
+background-color: #7469B6;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-family: 'Rethink Sans';
+margin-top: 30px;
+}

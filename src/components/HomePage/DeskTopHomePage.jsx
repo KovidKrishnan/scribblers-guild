@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { useState } from "react";
 import brenda from "./assets/brenda.png";
 import HomeIcon from "./assets/HomeIcon";
@@ -11,8 +12,8 @@ import ProfilePageProfileCard from './ProfilePageProfileCard.jsx'
 import "./HomePage.css";
 import profileImage from './assets/profileImage.png'
 
-const DeskTopHomePage = () => {
-  const [selectedPage, setSelectedPage] = useState("home");
+const DeskTopHomePage = ({selectedPage, setSelectedPage}) => {
+  
   
   const postData = {
     profilePic: brenda,
@@ -45,69 +46,32 @@ const DeskTopHomePage = () => {
   return (
     <div className="home-page-container">
       <div className="home-page-content-sections">
-        <div
-          className="home-page-icons"
-          style={{ color: selectedPage === "home" ? "#944E63" : "#DEB6AB" }}
-          onClick={() => setSelectedPage("home")}
-        >
-          {" "}
-          <HomeIcon
-            color={selectedPage === "home" ? "#944E63" : "#DEB6AB"}
-          ></HomeIcon>{" "}
-          <span
-            style={{ color: selectedPage === "home" ? "#944E63" : "#DEB6AB" }}
-          >
-            home
-          </span>
-        </div>
-        <div
-          className="home-page-icons"
-          style={{ color: selectedPage === "search" ? "#944E63" : "#DEB6AB" }}
-          onClick={() => setSelectedPage("search")}
-        >
-          <SearchIcon
-            color={selectedPage === "search" ? "#944E63" : "#DEB6AB"}
-          ></SearchIcon>{" "}
-          <span
-            style={{
-              color: selectedPage === "search" ? "#944E63" : "#DEB6AB",
-            }}
-          >
-            search
-          </span>
-        </div>
-        <div
-          className="home-page-icons"
-          style={{
-            color: selectedPage === "profile" ? "#944E63" : "#DEB6AB",
-          }}
-          onClick={() => setSelectedPage("profile")}
-        >
-          <ProfileIcon
-            color={selectedPage === "profile" ? "#944E63" : "#DEB6AB"}
-          ></ProfileIcon>{" "}
-          <span
-            style={{
-              color: selectedPage === "profile" ? "#944E63" : "#DEB6AB",
-            }}
-          >
-            profile
-          </span>
-        </div>
+        <Link to="/home" className="home-page-icons" style={{ color: selectedPage === "home" ? "#944E63" : "#DEB6AB" }}>
+          <HomeIcon color={selectedPage === "home" ? "#944E63" : "#DEB6AB"} />
+          <span style={{ color: selectedPage === "home" ? "#944E63" : "#DEB6AB" }}>home</span>
+        </Link>
+        <Link to="/search" className="home-page-icons" style={{ color: selectedPage === "search" ? "#944E63" : "#DEB6AB" }}>
+          <SearchIcon color={selectedPage === "search" ? "#944E63" : "#DEB6AB"} />
+          <span style={{ color: selectedPage === "search" ? "#944E63" : "#DEB6AB" }}>search</span>
+        </Link>
+        <Link to="/profile" className="home-page-icons" style={{ color: selectedPage === "profile" ? "#944E63" : "#DEB6AB" }}>
+          <ProfileIcon color={selectedPage === "profile" ? "#944E63" : "#DEB6AB"} />
+          <span style={{ color: selectedPage === "profile" ? "#944E63" : "#DEB6AB" }}>profile</span>
+        </Link>
       </div>
       {selectedPage === "home" && (
         <div className="home-page-content-sections">
-          <div className="write-post">
+          <Link to='/write-post' className="write-post">
             start writing...
-            <WriteIcon></WriteIcon>
-          </div>
-          <PostThumbNail postData={postData}></PostThumbNail>
-          <PostThumbNail postData={postData}></PostThumbNail>
-          <PostThumbNail postData={postData}></PostThumbNail>
-          <PostThumbNail postData={postData}></PostThumbNail>
-          <PostThumbNail postData={postData}></PostThumbNail>
-          <PostThumbNail postData={postData}></PostThumbNail>
-          <PostThumbNail postData={postData}></PostThumbNail>
+            <WriteIcon />
+          </Link>
+          <PostThumbNail postData={postData} />
+          <PostThumbNail postData={postData} />
+          <PostThumbNail postData={postData} />
+          <PostThumbNail postData={postData} />
+          <PostThumbNail postData={postData} />
+          <PostThumbNail postData={postData} />
+          <PostThumbNail postData={postData} />
         </div>
       )}
 
@@ -117,15 +81,15 @@ const DeskTopHomePage = () => {
             search among stories, poems, and many more
             <SearchIcon />
           </div>
-          <SearchHistoryItem></SearchHistoryItem>
-          <SearchHistoryItem></SearchHistoryItem>
-          <SearchHistoryItem></SearchHistoryItem>
-          <SearchHistoryItem></SearchHistoryItem>
+          <SearchHistoryItem />
+          <SearchHistoryItem />
+          <SearchHistoryItem />
+          <SearchHistoryItem />
         </div>
       )}
 
       {selectedPage === "profile" && (
-        <ProfilePageProfileCard profileDetails={profileDetails}></ProfilePageProfileCard>
+        <ProfilePageProfileCard profileDetails={profileDetails} />
       )}
       <div className="home-page-content-sections">
         <p className="recommended">recommended</p>

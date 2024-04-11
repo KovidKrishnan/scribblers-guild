@@ -120,6 +120,10 @@
     cursor: pointer;
 }
 
+.write-post:hover, .write-post:active {
+    color: #944E63;
+}
+
 
 .write-post>svg {
     position: absolute;
