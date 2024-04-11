@@ -18,7 +18,7 @@
     /* Establishes flex container */
     flex-direction: column;
     /* Arranges flex items in a column */
-    width: 100px;
+    width: 100%;
     height: 100%;
     /* Sets width of each content section */
 }
@@ -61,7 +61,6 @@
     justify-content: start;
     align-items: start;
     scroll-behavior: auto;
-
 }
 
 .home-page-icons {
@@ -102,7 +101,7 @@
 
 
 .write-post {
-    width: min(95%,800px);
+    width: 95%;
     /* Use min-width instead of width */
     min-height: 60px;
     border-radius: 10px;
@@ -130,7 +129,7 @@
 }
 
 .post-thumbnail-card {
-    width: min(92%, 780px);
+    width: 92%;
     border: 0.5px solid black;
     border-radius: 10px;
     display: flex;
@@ -269,3 +268,107 @@
     text-align: left;
     color: #989898;
 }
+
+
+.search-post {
+    width: 95%;
+    /* Use min-width instead of width */
+    min-height: 60px;
+    border-radius: 10px;
+    border: 0.5px solid #DEB6AB;
+    opacity: 0px;
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+    color: #DEB6AB;
+    background-color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+}
+
+.search-post>svg {
+    position: absolute;
+    right: 16px;
+    bottom: 17%;
+    width: 24px;
+}
+
+.search-history-reads {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    position: relative;
+    padding: 0px 20px 20px 0px;
+    margin: 0;
+    border-bottom: 1px solid #DEB6AB;
+}
+
+.go-to-read-thumbnail-search-history {
+    color: #F9F8EB;
+    background-color: #277457;
+    width: 68px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none !important;
+    border: none;
+    position: absolute;
+    bottom: 35%;
+    right: 0;
+}
+
+.profile-page-profile-card {
+    width: 95%;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.06), 0 0 4px 0 rgba(0, 0, 0, 0.04);
+    align-self: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.profile-page-profile-card>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 30px;
+}
+
+.profile-page-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-page-name {
+    font-family: Rethink Sans;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.profile-page-bio {
+    color: #908C8C;
+    font-size: 12px;
+}
+
+.edit-profile {
+    width: auto;
+    position: absolute;
+    right: 40px;
+    font-family: Rethink Sans;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: #944E63;
+    cursor: pointer;
+}
+

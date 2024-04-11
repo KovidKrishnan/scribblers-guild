@@ -41,7 +41,6 @@ const MobileHomePage = () => {
 
 
   return (
-    <>
         <div className="mobile-home-page-container">
         <div className="mobile-profile-icon">
             <MobileProfileIcon></MobileProfileIcon>
@@ -74,8 +73,6 @@ const MobileHomePage = () => {
 
         </div>
     </div>
-    <ScrollToTopButton></ScrollToTopButton>
-    </>
   );
 };
 
