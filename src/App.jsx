@@ -5,6 +5,7 @@ import HomePage from './components/HomePage/HomePage'
 import './App.css'
 import { useState } from 'react'
 import WritePost from './components/Post/WritePost'
+import InterestsPage from './components/Interests/InterestsPage'
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('home')
@@ -17,6 +18,7 @@ function App() {
         <Route path='/profile' element={<HomePage selectedPage='profile' setSelectedPage={setSelectedPage}></HomePage>}></Route>
         <Route path='*' element={<ErrorPage></ErrorPage>}></Route>
         <Route path='/write-post' element={<WritePost></WritePost>}></Route>
+        <Route path='/interests' element={<InterestsPage></InterestsPage>}></Route>
       </Routes>
     </BrowserRouter>
   )
